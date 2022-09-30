@@ -781,11 +781,14 @@ trade-crypto
   border-radius: 50%;
   color: var(--clr-primary-2);
 }
-.crypto-btn {
+.hide-btn {
   display: none;
 }
 .display-btn {
   display: flex;
+}
+.display-icon {
+  display: block;
 }
 
 @media screen and (min-width: 540px) and (max-width: 768px) {
