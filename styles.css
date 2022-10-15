@@ -70,7 +70,7 @@ img {
   text-transform: capitalize;
   background: var(--clr-primary-2);
   color: var(--clr-white);
-  padding: 0.5rem;
+  padding: 0.9rem;
   display: inline-flex;
   gap: 1.325rem;
   transition: var(--transition);
@@ -751,6 +751,7 @@ trade-crypto
   background: var(--clr-primary-3);
   color: var(--clr-white);
 }
+
 .crypto-img {
   margin-bottom: 3rem;
 }
@@ -986,7 +987,7 @@ Markets
   background: var(--clr-white);
   color: var(--clr-black);
   font-weight: var(--ff-weight-1);
-  padding: 0.7rem;
+  padding: 0.8rem;
   font-size: 1.2rem;
 }
 .sub-btn {
@@ -1038,7 +1039,8 @@ footer
 */
 .crappo-logo {
   display: grid;
-  place-items: center;
+  place-items: start;
+  margin-top: 2.5rem;
 }
 .quick-links,
 .resources-links {
@@ -1049,6 +1051,10 @@ footer
 .quick-links h3 {
   font-size: 1.5rem;
   font-weight: var(--ff-weight-3);
+}
+
+.footer-list {
+  text-align: start;
 }
 .footer-list li {
   margin-top: 1.4rem;
@@ -1064,13 +1070,16 @@ li a:hover {
   font-size: 1.5rem;
   font-weight: var(--ff-weight-3);
 }
+.resources-links {
+  text-align: left;
+}
 .payments {
   display: grid;
   place-items: center;
   margin-top: 2.5rem;
 }
 .payments h4 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: var(--clr-white);
   font-weight: var(--ff-weight-3);
   text-align: center;
@@ -1082,8 +1091,8 @@ li a:hover {
   margin-top: 1rem;
 }
 .payment-option {
-  width: 80px;
-  height: 70px;
+  width: 70px;
+  height: 60px;
   background: linear-gradient(180deg, #2b076e 0%, #0d0d2b 100%);
   margin-left: 2rem;
   display: grid;
@@ -1115,6 +1124,15 @@ li a:hover {
 footer {
   padding-top: 4rem;
   padding-bottom: 3rem;
+}
+
+@media screen and (min-width: 380px) {
+  .quick-links,
+  .resources-links {
+    padding-left: 25px;
+  }
+  .quick-links h3{
+  text-align: start;
 }
 @media screen and (min-width: 992px) {
   .footer {
